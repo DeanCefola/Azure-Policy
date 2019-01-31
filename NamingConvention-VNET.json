@@ -1,0 +1,27 @@
+{
+  "mode": "all",
+  "policyRule": {
+    "if": {
+      "allof": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Network/virtualNetworks"
+        },
+        {
+          "not": {
+            "anyof": [
+              {
+                "field": "name",
+                "match": "VNET-?-???-##"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  },
+  "parameters": {}
+}
