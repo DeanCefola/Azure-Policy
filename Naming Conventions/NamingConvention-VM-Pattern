@@ -1,0 +1,250 @@
+{
+  "mode": "all",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Compute/virtualMachines"
+        },
+        {
+          "not": {
+            "allOf": [
+              {
+                "anyOf": [
+                  {
+                    "field": "name",
+                    "match": "A.........."
+                  },
+                  {
+                    "field": "name",
+                    "match": "D.........."
+                  },
+                  {
+                    "field": "name",
+                    "match": "C.........."
+                  },
+                  {
+                    "field": "name",
+                    "match": "O.........."
+                  }
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "field": "name",
+                    "match": ".W........."
+                  },
+                  {
+                    "field": "name",
+                    "match": ".L........."
+                  },
+                  {
+                    "field": "name",
+                    "match": ".S........."
+                  },
+                  {
+                    "field": "name",
+                    "match": ".N........."
+                  },
+                  {
+                    "field": "name",
+                    "match": ".A........."
+                  },
+                  {
+                    "field": "name",
+                    "match": ".B........."
+                  },
+                  {
+                    "field": "name",
+                    "match": ".C........."
+                  }
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "field": "name",
+                    "match": "..WB......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..CS......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..CH......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..DB......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..FS......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..PS......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..AP......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..MR......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..MX......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..MA......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..DS......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..BK......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..SN......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..ST......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..DN......."
+                  },
+                  {
+                    "field": "name",
+                    "match": "..FT......."
+                  }
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "field": "name",
+                    "match": "....ESS...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....LSM...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....FV9...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....DFT...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....FMS...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....RMS...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....CRS...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....GPM...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....MSG...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....EML...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....PMS...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....INF...."
+                  },
+                  {
+                    "field": "name",
+                    "match": "....TFS...."
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "match": ".......##.."
+              },
+              {
+                "anyOf": [
+                  {
+                    "field": "name",
+                    "match": ".........PH"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........DH"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........SH"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........PV"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........DV"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........SV"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........PN"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........DN"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........SN"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........PC"
+                  },
+                  {
+                    "field": "name",
+                    "match": ".........PZ"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+}
