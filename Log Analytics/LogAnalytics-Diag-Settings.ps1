@@ -1,4 +1,4 @@
-﻿  <#Author   : Dean Cefola
+  <#Author   : Dean Cefola
 # Creation Date: 05-20-2019
 # Usage      : AZURE Policy - Resources Diagnostic Settings for Log Analytics 
 
@@ -22,18 +22,18 @@ Get-AzureRmRoleDefinition -Id b24988ac-6180-42a0-ab88-20f7382dd24c
 #    Deploy Policies to Subsciption    #
 ########################################
 AzureRM.Resources\New-AzureRmDeployment `
-    -name 'policies’ `
+    -name 'Loggingpolicies’ `
     –templatefile 'C:\temp\LogAnalytics.json' `
-    -location 'eastus2’ `
+    -location 'eastus’ `
     –verbose
 
 
 ###############################
 #    Clean Up All Policies    #
 ###############################                                      
-Get-AzureRmPolicySetDefinition -Name 'resource-diag-settings-policySet' -ErrorAction SilentlyContinue `
+Get-AzureRmPolicySetDefinition -Name 'Diag-Settings-Initiative' -ErrorAction SilentlyContinue `
     | Remove-AzureRmPolicySetDefinition -Force -Verbose
-Get-AzureRmPolicyDefinition -Custom | ? -Property Name -Match diag-settings-policy `
+Get-AzureRmPolicyDefinition -Custom | ? -Property Name -Match '-diag-policy' `
     | Remove-AzureRmPolicyDefinition -Force -Verbose
 
 
