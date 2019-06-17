@@ -1,77 +1,31 @@
 ﻿{
   "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {},
+  "parameters": {
+
+  },
   "variables": {
-    "singleQuote": "'",
-    "logAnalytics": "[concat('[parameters(', variables('singleQuote'), 'logAnalytics', variables('singleQuote'), ')]')]",
-    "resourceName": "[concat('[parameters(', variables('singleQuote'), 'resourceName', variables('singleQuote'), ')]')]",
-    "resourceDiagName": "[concat('[concat(', 'parameters(', variables('singleQuote'), 'resourceName', variables('singleQuote'), ')', ', ', variables('singleQuote'), '/', variables('singleQuote'), ', ', variables('singleQuote'), 'Microsoft.Insights/setByPolicy', variables('singleQuote'), ')]')]",
-    "resourceNameField": "[concat('[field(', variables('singleQuote'), 'name', variables('singleQuote'), ')]')]",
-    "resourceFullNameField": "[concat('[field(', variables('singleQuote'), 'fullName', variables('singleQuote'), ')]')]",
-    "location": "[concat('[parameters(', variables('singleQuote'), 'location', variables('singleQuote'), ')]')]",
-    "locationField": "[concat('[field(', variables('singleQuote'), 'location', variables('singleQuote'), ')]')]",
-    "policyDescription": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
-    "nicDiagPolicyName": "nic-diagnostic-settings-policyDef",
-    "aaDiagPolicyName": "aa-diagnostic-settings-policyDef",
-    "pipDiagPolicyName": "pip-diagnostic-settings-policyDef",
-    "lbDiagPolicyName": "lb-diagnostic-settings-policyDef",
-    "nsgDiagPolicyName": "nsg-diagnostic-settings-policyDef",
-    "kvDiagPolicyName": "kv-diagnostic-settings-policyDef",
-    "cognitiveDiagPolicyName": "cognitive-diagnostic-settings-policyDef",
-    "dataLakeAnalyticsDiagPolicyName": "dlanalytics-diagnostic-settings-policyDef",
-    "dataLakeStoreDiagPolicyName": "dlstore-diagnostic-settings-policyDef",
-    "eventHubDiagPolicyName": "eventHub-diagnostic-settings-policyDef",
-    "iotHubDiagPolicyName": "iotHub-diagnostic-settings-policyDef",
-    "logicAppsWorkflowDiagPolicyName": "logicApps-workflow-diagnostic-settings-policyDef",
-    "logicAppsIntegrationAccountsDiagPolicyName": "logicApps-integrationAccounts-diagnostic-settings-policyDef",
-    "recoveryVaultDiagPolicyName": "recoveryVault-diagnostic-settings-policyDef",
-    "searchServicesDiagPolicyName": "searchServices-diagnostic-settings-policyDef",
-    "serviceBusDiagPolicyName": "serviceBus-diagnostic-settings-policyDef",
-    "sqlDBsDiagPolicyName": "sqlDBs-diagnostic-settings-policyDef",
-    "sqlElasticPoolsDiagPolicyName": "sqlElasticPools-diagnostic-settings-policyDef",
-    "apiMgmtDiagPolicyName": "apiMgmt-diagnostic-settings-policyDef",
-    "appGwDiagPolicyName": "appGw-diagnostic-settings-policyDef",
-    "batchDiagPolicyName": "batch-diagnostic-settings-policyDef",
-    "mySQLDiagPolicyName": "mySQL-diagnostic-settings-policyDef",
-    "postgreSQLDiagPolicyName": "postgreSQL-diagnostic-settings-policyDef",
-    "cdnEndpointsDiagPolicyName": "cdnEndpoints-diagnostic-settings-policyDef",
-    "cosmosDBsDiagPolicyName": "cosmosDBs-diagnostic-settings-policyDef",
-    "dataFactoryDiagPolicyName": "dataFactory-diagnostic-settings-policyDef",
-    "firewallDiagPolicyName": "firewall-diagnostic-settings-policyDef",
-    "powerBIEmbeddedDiagPolicyName": "powerBIEmbedded-diagnostic-settings-policyDef",
-    "streamAnalyticsDiagPolicyName": "streamAnalytics-diagnostic-settings-policyDef",
-    "expressRoutesDiagPolicyName": "expressRoutes-diagnostic-settings-policyDef",
-    "aciDiagPolicyName": "aci-diagnostic-settings-policyDef",
-    "acrDiagPolicyName": "acr-diagnostic-settings-policyDef",
-    "vnetDiagPolicyName": "vnet-diagnostic-settings-policyDef",
-    "vmDiagPolicyName": "vm-diagnostic-settings-policyDef",
-    "vmssDiagPolicyName": "vmss-diagnostic-settings-policyDef",
-    "vnetGWDiagPolicyName": "vnetGW-diagnostic-settings-policyDef",
-    "aksDiagPolicyName": "aks-diagnostic-settings-policyDef",
-    "websiteDiagPolicyName": "website-diagnostic-settings-policyDef",
-    "analysisServiceDiagPolicyName": "analysisService-diagnostic-settings-policyDef",
-    "eventGridTopicDiagPolicyName": "eventGridTopic-diagnostic-settings-policyDef",
-    "eventGridSubDiagPolicyName": "eventGridSub-diagnostic-settings-policyDef",
-    "hdInsightDiagPolicyName": "hdInsight-diagnostic-settings-policyDef",
-    "redisCacheDiagPolicyName": "redisCache-diagnostic-settings-policyDef",
-    "relayDiagPolicyName": "relay-diagnostic-settings-policyDef",
-    "signalRDiagPolicyName": "signalR-diagnostic-settings-policyDef",
-    "trafficManagerDiagPolicyName": "trafficManager-diagnostic-settings-policyDef",
-    "timeSeriesInsightsDiagPolicyName": "timeSeriesInsights-diagnostic-settings-policyDef",
-    "diagSettingsInitiativeName": "resource-diagnostic-settings-policySet"
+    "Quote": "'",
+    "logAnalytics": "[concat('[parameters(', variables('Quote'), 'logAnalytics', variables('Quote'), ')]')]",
+    "resourceName": "[concat('[parameters(', variables('Quote'), 'resourceName', variables('Quote'), ')]')]",
+    "resourceDiagName": "[concat('[concat(', 'parameters(', variables('Quote'), 'resourceName', variables('Quote'), ')', ', ', variables('Quote'), '/', variables('Quote'), ', ', variables('Quote'), 'Microsoft.Insights/setByPolicy', variables('Quote'), ')]')]",
+    "resourceNameField": "[concat('[field(', variables('Quote'), 'name', variables('Quote'), ')]')]",
+    "resourceFullNameField": "[concat('[field(', variables('Quote'), 'fullName', variables('Quote'), ')]')]",
+    "location": "[concat('[parameters(', variables('Quote'), 'location', variables('Quote'), ')]')]",
+    "locationField": "[concat('[field(', variables('Quote'), 'location', variables('Quote'), ')]')]",
+    "policyDescription": "Automatically enable diagnostic settings for Log Analytics"
   },
   "resources": [
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('nicDiagPolicyName')]",
+      "name": "nic-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [],
       "properties": {
         "displayName": "Apply diagnostic settings for Network Interfaces",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -160,16 +114,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('aaDiagPolicyName')]",
+      "name": "aa-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('nicDiagPolicyName')]"
+        "nic-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Automation Accounts",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -272,16 +226,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('pipDiagPolicyName')]",
+      "name": "pip-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('aaDiagPolicyName')]"
+        "aa-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Public IPs",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -384,16 +338,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('lbDiagPolicyName')]",
+      "name": "lb-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('pipDiagPolicyName')]"
+        "pip-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Load Balancers",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -492,16 +446,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('nsgDiagPolicyName')]",
+      "name": "nsg-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('lbDiagPolicyName')]"
+        "lb-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Network Security Groups",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -590,16 +544,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('kvDiagPolicyName')]",
+      "name": "kv-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('nsgDiagPolicyName')]"
+        "nsg-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Key Vaults",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -694,16 +648,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('cognitiveDiagPolicyName')]",
+      "name": "cognitive-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('kvDiagPolicyName')]"
+        "kv-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Cognitive Services",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -802,16 +756,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('dataLakeAnalyticsDiagPolicyName')]",
+      "name": "dlanalytics-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('cognitiveDiagPolicyName')]"
+        "cognitive-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Data Lake Analytics",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -910,16 +864,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('dataLakeStoreDiagPolicyName')]",
+      "name": "dlstore-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('dataLakeAnalyticsDiagPolicyName')]"
+        "dlanalytics-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Data Lake Storage",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1018,16 +972,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('eventHubDiagPolicyName')]",
+      "name": "eventHub-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('dataLakeStoreDiagPolicyName')]"
+        "dlstore-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Event Hub Namespaces",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1130,16 +1084,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('iotHubDiagPolicyName')]",
+      "name": "iotHub-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('eventHubDiagPolicyName')]"
+        "eventHub-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for IoT Hubs",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1282,16 +1236,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('logicAppsWorkflowDiagPolicyName')]",
+      "name": "logicApps-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('iotHubDiagPolicyName')]"
+        "iotHub-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Logic Apps workflows",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1386,16 +1340,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('logicAppsIntegrationAccountsDiagPolicyName')]",
+      "name": "logicApps-Accounts-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('logicAppsWorkflowDiagPolicyName')]"
+        "logicApps-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Logic Apps Integration Accounts",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1480,16 +1434,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('recoveryVaultDiagPolicyName')]",
+      "name": "recoveryVault-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('logicAppsIntegrationAccountsDiagPolicyName')]"
+        "logicApps-Accounts-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Recovery Vaults",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1602,16 +1556,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('searchServicesDiagPolicyName')]",
+      "name": "search-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('recoveryVaultDiagPolicyName')]"
+        "recoveryVault-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Search Services",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1706,16 +1660,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('serviceBusDiagPolicyName')]",
+      "name": "serviceBus-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('searchServicesDiagPolicyName')]"
+        "search-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Service Bus namespaces",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1810,16 +1764,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('sqlDBsDiagPolicyName')]",
+      "name": "sqlDB-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('serviceBusDiagPolicyName')]"
+        "serviceBus-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for SQL Databases",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -1954,16 +1908,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('sqlElasticPoolsDiagPolicyName')]",
+      "name": "sqlElasticPool-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('sqlDBsDiagPolicyName')]"
+        "sqlDB-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for SQL Elastic Pools",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2053,16 +2007,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('apiMgmtDiagPolicyName')]",
+      "name": "apiMgmt-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('sqlElasticPoolsDiagPolicyName')]"
+        "sqlElasticPool-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for API Management services",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2175,16 +2129,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('appGwDiagPolicyName')]",
+      "name": "appGw-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('apiMgmtDiagPolicyName')]"
+        "apiMgmt-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Application Gateways",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2287,16 +2241,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('batchDiagPolicyName')]",
+      "name": "batch-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('appGwDiagPolicyName')]"
+        "appGw-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Batch accounts",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2391,16 +2345,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('mySQLDiagPolicyName')]",
+      "name": "mySQL-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('batchDiagPolicyName')]"
+        "batch-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for MySQL Databases",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2495,16 +2449,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('postgreSQLDiagPolicyName')]",
+      "name": "postgreSQL-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('mySQLDiagPolicyName')]"
+        "mySQL-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for PostgreSQL Databases",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2599,16 +2553,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('cdnEndpointsDiagPolicyName')]",
+      "name": "cdnEndpoints-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('postgreSQLDiagPolicyName')]"
+        "postgreSQL-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for CDN Endpoints",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2693,16 +2647,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('cosmosDBsDiagPolicyName')]",
+      "name": "cosmosDBs-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('cdnEndpointsDiagPolicyName')]"
+        "cdnEndpoints-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Cosmos DB",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2805,16 +2759,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('dataFactoryDiagPolicyName')]",
+      "name": "dataFactory-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('cosmosDBsDiagPolicyName')]"
+        "cosmosDBs-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Data Factory",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -2917,16 +2871,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('firewallDiagPolicyName')]",
+      "name": "firewall-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('dataFactoryDiagPolicyName')]"
+        "dataFactory-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Firewalls",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3025,16 +2979,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('powerBIEmbeddedDiagPolicyName')]",
+      "name": "powerBIEmbedded-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('firewallDiagPolicyName')]"
+        "firewall-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Power BI Embedded",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3129,16 +3083,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('streamAnalyticsDiagPolicyName')]",
+      "name": "streamAnalytics-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('powerBIEmbeddedDiagPolicyName')]"
+        "powerBIEmbedded-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Stream Analytics",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3237,16 +3191,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('expressRoutesDiagPolicyName')]",
+      "name": "expressRoutes-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('streamAnalyticsDiagPolicyName')]"
+        "streamAnalytics-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Express Routes Circuits",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3341,16 +3295,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('aciDiagPolicyName')]",
+      "name": "aci-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('expressRoutesDiagPolicyName')]"
+        "expressRoutes-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Container Instances",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3440,16 +3394,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('acrDiagPolicyName')]",
+      "name": "acr-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('aciDiagPolicyName')]"
+        "aci-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Container Registries",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3539,16 +3493,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('vnetDiagPolicyName')]",
+      "name": "vnet-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('acrDiagPolicyName')]"
+        "acr-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Virtual Networks",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3633,16 +3587,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('vmDiagPolicyName')]",
+      "name": "vm-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('vnetDiagPolicyName')]"
+        "vnet-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Virtual Machines",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3731,16 +3685,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('vmssDiagPolicyName')]",
+      "name": "vmss-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('vmDiagPolicyName')]"
+        "vm-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Virtual Machine Scale Sets",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3829,16 +3783,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('vnetGWDiagPolicyName')]",
+      "name": "vnetGW-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('vmssDiagPolicyName')]"
+        "vmss-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Virtual Network Gateways",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -3953,16 +3907,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('aksDiagPolicyName')]",
+      "name": "aks-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('vnetGWDiagPolicyName')]"
+        "vnetGW-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Kubernetes Service",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4073,16 +4027,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('websiteDiagPolicyName')]",
+      "name": "website-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('aksDiagPolicyName')]"
+        "aks-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Web Sites",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4172,16 +4126,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('analysisServiceDiagPolicyName')]",
+      "name": "analysisService-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('websiteDiagPolicyName')]"
+        "website-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Analysis Services",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4280,16 +4234,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('eventGridTopicDiagPolicyName')]",
+      "name": "eventGridTopic-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('analysisServiceDiagPolicyName')]"
+        "analysisService-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Event Grid Topics",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4379,16 +4333,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('eventGridSubDiagPolicyName')]",
+      "name": "eventGrid-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('eventGridTopicDiagPolicyName')]"
+        "eventGridTopic-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Event Grid Subscriptions",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4478,16 +4432,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('hdInsightDiagPolicyName')]",
+      "name": "hdInsight-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('eventGridSubDiagPolicyName')]"
+        "eventGrid-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for HDInsight",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4577,16 +4531,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('redisCacheDiagPolicyName')]",
+      "name": "redisCache-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('hdInsightDiagPolicyName')]"
+        "hdInsight-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Redis Cache",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4676,16 +4630,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('relayDiagPolicyName')]",
+      "name": "relay-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('redisCacheDiagPolicyName')]"
+        "redisCache-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Relay",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4775,16 +4729,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('signalRDiagPolicyName')]",
+      "name": "signalR-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('relayDiagPolicyName')]"
+        "relay-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for SignalR",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4874,16 +4828,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('trafficManagerDiagPolicyName')]",
+      "name": "trafficManager-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('signalRDiagPolicyName')]"
+        "signalR-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Azure Traffic Manager",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -4978,16 +4932,16 @@
     },
     {
       "type": "Microsoft.Authorization/policyDefinitions",
-      "name": "[variables('timeSeriesInsightsDiagPolicyName')]",
+      "name": "timeSeriesInsights-diag-policy",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('trafficManagerDiagPolicyName')]"
+        "trafficManager-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for Time Series Insights",
         "description": "[variables('policyDescription')]",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "mode": "all",
         "parameters": {
@@ -5077,16 +5031,16 @@
     },
     {
       "type": "Microsoft.Authorization/policySetDefinitions",
-      "name": "[variables('diagSettingsInitiativeName')]",
+      "name": "Diag-Settings-Initiative",
       "apiVersion": "2018-05-01",
       "dependsOn": [
-        "[variables('timeSeriesInsightsDiagPolicyName')]"
+        "timeSeriesInsights-diag-policy"
       ],
       "properties": {
         "displayName": "Apply diagnostic settings for applicable resources",
         "description": "This initiative configures application Azure resources to forward diagnostic logs and metrics to an Azure Log Analytics workspace.",
         "metadata": {
-          "category": "Monitoring"
+          "category": "DiagSettings"
         },
         "parameters": {
           "logAnalytics": {
@@ -5100,7 +5054,7 @@
         },
         "policyDefinitions": [
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('nicDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'nic-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5108,7 +5062,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('aaDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'aa-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5116,7 +5070,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('pipDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'pip-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5124,7 +5078,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('lbDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'lb-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5132,7 +5086,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('nsgDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'nsg-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5140,7 +5094,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('kvDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'kv-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5148,7 +5102,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('cognitiveDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'cognitive-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5156,7 +5110,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('dataLakeAnalyticsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'dlanalytics-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5164,7 +5118,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('dataLakeStoreDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'dlstore-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5172,7 +5126,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('eventHubDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'eventHub-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5180,7 +5134,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('iotHubDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'iotHub-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5188,7 +5142,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('logicAppsWorkflowDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'logicApps-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5196,7 +5150,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('logicAppsIntegrationAccountsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'logicApps-Accounts-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5204,7 +5158,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('recoveryVaultDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'recoveryVault-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5212,7 +5166,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('searchServicesDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'search-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5220,7 +5174,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('serviceBusDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'serviceBus-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5228,7 +5182,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('sqlDBsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'sqlDB-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5236,7 +5190,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('sqlElasticPoolsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'sqlElasticPool-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5244,7 +5198,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('apiMgmtDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'apiMgmt-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5252,7 +5206,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('appGwDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'appGw-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5260,7 +5214,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('batchDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'batch-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5268,7 +5222,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('mySQLDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'mySQL-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5276,7 +5230,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('postgreSQLDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'postgreSQL-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5284,7 +5238,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('cdnEndpointsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'cdnEndpoints-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5292,7 +5246,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('cosmosDBsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'cosmosDBs-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5300,7 +5254,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('dataFactoryDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'dataFactory-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5308,7 +5262,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('firewallDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'firewall-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5316,7 +5270,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('powerBIEmbeddedDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'powerBIEmbedded-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5324,7 +5278,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('streamAnalyticsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'streamAnalytics-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5332,7 +5286,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('expressRoutesDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'expressRoutes-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5340,7 +5294,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('aciDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'aci-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5348,7 +5302,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('acrDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'acr-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5356,7 +5310,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('vnetDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'vnet-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5364,7 +5318,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('vmDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'vm-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5372,7 +5326,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('vmssDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'vmss-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5380,7 +5334,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('vnetGWDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'vnetGW-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5388,7 +5342,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('aksDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'aks-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5396,7 +5350,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('websiteDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'website-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5404,7 +5358,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('analysisServiceDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'analysisService-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5412,7 +5366,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('eventGridTopicDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'eventGridTopic-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5420,7 +5374,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('eventGridSubDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'eventGrid-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5428,7 +5382,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('hdInsightDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'hdInsight-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5436,7 +5390,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('redisCacheDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'redisCache-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5444,7 +5398,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('relayDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'relay-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5452,7 +5406,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('signalRDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'signalR-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5460,7 +5414,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('trafficManagerDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'trafficManager-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5468,7 +5422,7 @@
             }
           },
           {
-            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', variables('timeSeriesInsightsDiagPolicyName'))]",
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions/', 'timeSeriesInsights-diag-policy')]",
             "parameters": {
               "logAnalytics": {
                 "value": "[variables('logAnalytics')]"
@@ -5479,5 +5433,7 @@
       }
     }
   ],
-  "outputs": {}
+  "outputs": {
+
+  }
 }
