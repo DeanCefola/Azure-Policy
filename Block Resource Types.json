@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "displayName": "DENY Resource Type - Public IP",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Deny all public ip addresses",
+    "metadata": {
+      "category": "_AzureAcademy",
+      "createdBy": "2af39dce-b999-4877-bfdb-5eec986497ed",
+      "createdOn": "2019-03-02T03:49:36.5231197Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "anyOf": [
+          {
+            "source": "action",
+            "like": "Microsoft.Network/publicIPAddresses/*"
+          }
+        ]
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/AA-Root/providers/Microsoft.Authorization/policyDefinitions/a1608db6-0c2d-47e9-bc0d-a8b08f73d206",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "a1608db6-0c2d-47e9-bc0d-a8b08f73d206"
+}
